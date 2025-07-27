@@ -36,9 +36,9 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="funcionarios.html">Funcionarios</a></li>
                     <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="fornecedores.html">Fornecedores</a></li>                    
                     <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="fornecedores.html"></a></li>
-                    <li><button class="btn-cadastre" id="btn_acessar">Cadastre-se</button></li>
+                    <li><button class="btn-cadastre" id="btn_acessar">Sair</button></li>
                 </ul>
                 <div class="logo">
                     <li><a href="index.html"> <img src="./img/logomarca1.png" alt="Logotipo da empresa"
@@ -51,29 +51,36 @@
 
     <main>
         <div class="container-global">
-            <div class="text-container-ind">
-                <h2 class="title-global">Crescimento</h2>
-                <p>Otimização da Produção: Uso de automação e monitoramento em 
-                    tempo real para aumentar a eficiência.</p>
-                    <br>
-                <p> Controle de Inventário: Gestão eficaz para reduzir desperdícios e 
-                    melhorar o fluxo de caixa.</p>
-                    <br>
-                <p>Manutenção Preditiva: Monitoramento contínuo de máquinas para 
-                    previnir falhas e reduzir inatividade.</p>
-                    <br>
-                <p>Rastreamentoda Qualidade: Controle rigoroso dos padrões de 
-                    qualidade para garantir conformidade e minimizar retravalho.</p>
-                    <br>
-                <p>Gestão da Cadeia de Suprimentos: Coordenação eficiente com 
-                    fornecedores e distribuidores para otimizar logística e planejamento.</p>
-            </div>
+            <div class="container-cadastro" id="container">
+                <!-- Tela de Cadastro -->
+                <div id="telaCadastro" class="form">
+                    <h1>Cadastro de Produtos</h1>
 
-            <div class="global-image">
-                <img src="./img/industria2.png" alt="Homem com um gráfico na posição de subida">
-            </div>
+                    <label for="nomeEmpresa">Nome da Produtos:</label>
+                    <input type="text" id="nomeEmpresa" class="global-entrada1" placeholder="*Nome da empresa" required>
+
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" class="global-entrada1" placeholder="*CNPJ da empresa" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="global-entrada1" placeholder="*Email da empresa" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" class="global-entrada1" placeholder="*Telefone da empresa"
+                        required>
+
+                    <label for="login">Login:</label>
+                    <input type="text" id="login" class="entrada2" placeholder="*Escolha um login" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" class="entrada2" placeholder="*Escolha uma senha" required>
+
+                    <button class="button_cadastro1" onclick="cadastrarEmpresa()">Cadastrar</button>
+                    <button class="button_login1" id="botaoIrParaLogin" onclick="mostrarTelaLogin()">Login</button>
+
+                </div>
+            </div>    
         </div>
-       
     </main>
 
     <footer>

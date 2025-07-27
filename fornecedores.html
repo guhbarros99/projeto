@@ -51,15 +51,39 @@
     </header>
 
     <main>
-        <div class="container-fale-conosco">
+        <div class="container-global">
+            <div class="container-cadastro" id="container">
+                <!-- Tela de Cadastro -->
+                <div id="telaCadastro" class="form">
+                    <h1>Cadastro de Produtos</h1>
 
-            <div class="content-form">
-                <h2><i class="bi bi-envelope-paper"></i>Fornecedor</h2>
-            </div>
+                    <label for="nomeEmpresa">Nome da Produtos:</label>
+                    <input type="text" id="nomeEmpresa" class="global-entrada1" placeholder="*Nome da empresa" required>
 
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" class="global-entrada1" placeholder="*CNPJ da empresa" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="global-entrada1" placeholder="*Email da empresa" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" class="global-entrada1" placeholder="*Telefone da empresa"
+                        required>
+
+                    <label for="login">Login:</label>
+                    <input type="text" id="login" class="entrada2" placeholder="*Escolha um login" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" class="entrada2" placeholder="*Escolha uma senha" required>
+
+                    <button class="button_cadastro1" onclick="cadastrarEmpresa()">Cadastrar</button>
+                    <button class="button_login1" id="botaoIrParaLogin" onclick="mostrarTelaLogin()">Login</button>
+
+                </div>
+            </div>    
         </div>
-        
     </main>
+
 
     <footer>
         <div class="contato">
